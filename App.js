@@ -1,12 +1,24 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { Text } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 import HeoScreen from './screens/HeoScreen';
 import BeoScreen from './screens/BeoScreen';
 
+import * as Notifications from 'expo-notifications';
+
 const Tab = createBottomTabNavigator();
+
+// https://docs.expo.dev/push-notifications/overview/
+
+// Settings for the notification handler
+Notifications.setNotificationHandler({
+  handleNotification: async () => ({
+    shouldShowAlert: true,
+    shouldPlaySound: false,
+    shouldSetBadge: false,
+  }),
+});
 
 export default function App() {
   return (
