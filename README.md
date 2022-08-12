@@ -11,7 +11,8 @@ Install node's modules and libraries in `package.json` by `node package manager 
 npm install
 ```
 
-Create a `.env` file of the root of the project for testing expo's token
+Create a `.env` file of the root of the project for testing expo's token.
+It must have a hard value of a device.
 
 - `EXPO_TOKEN_TEST`
 
@@ -19,17 +20,17 @@ Start the project locally
 
 ```node
 npm start
-``
+```
 
 or
 
 ```node
 expo start
-``
+```
 
-##DEMO
+## DEMO
 
-![](https://github.com/goiheo/assets/gif/demo-goiheo.gif)
+![](https://github.com/letuananh0711/goiheo/blob/master/assets/gif/demo-goiheo.gif)
 
 ## LICENSE
 
