@@ -22,7 +22,7 @@ export const sendPushNotification = async (expoPushToken, title, body) => {
 };
 
 /************************************************/
-/* Need to implement a server for an async call */
+/* TODO : Need to implement a server for an async call */
 /************************************************/
 
 // send token to server and receive a code
